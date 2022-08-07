@@ -58,7 +58,7 @@ The enable button will allow the smart contract to redeem an infinite amount of 
 
 # How to borrow assets from the protocol?
 
-To borrow assets you need to set your supplied assets as collateral. You can do this by toggeling the collateral button on the user interface or by calling the entermarktet function on the c token smart contract.
+To borrow assets you need to set your supplied assets as collateral. You can do this by toggling the collateral button on the user interface or by calling the enter market function on the c token smart contract.
 
 
 
@@ -69,7 +69,7 @@ To borrow assets you need to set your supplied assets as collateral. You can do 
 2) select the assets you want to borrow (ex Ethereum)
 
 
-3) put in the amount or borrow the 80% collateral limmit, be aware that you can borrow more than the 80% limit, but increases your risk of liquididation.
+3) put in the amount or borrow the 80% collateral limit, be aware that you can borrow more than the 80% limit, but increases your risk of liquidation.
 <img src="./assets/borrow-wbtc.png"
      alt="Connecting metamask"
      style="float: left; margin-right: 10px;" />
@@ -97,7 +97,7 @@ To repay the full amount of assets you need to have the amount of assets you bor
 <img src="./assets/repay-wbtc.png"
      alt="Connecting metamask"
      style="float: left; margin-right: 10px;" />
-5) You can now see that the borrowed asset is successfully repayed to the protocol and displayed on the borrow balance.
+5) You can now see that the borrowed asset is successfully repay to the protocol and displayed on the borrow balance.
 <img src="./assets/repayed-display.png"
      alt="Connecting metamask"
      style="float: left; margin-right: 10px;" />
@@ -106,7 +106,7 @@ To repay the full amount of assets you need to have the amount of assets you bor
 
 # How to withraw assets from the protocol?
 
-To withdraw the assets you need either to have repaid all you debths or other assets supplied as collateral need to be able to cover the loan. When you want to withdraw all assets you can exit the market by toggeling the collateral button. The withdraw will be done automaticly to your account. When partially withdrawing you can enter an amount in the inuput field.  
+To withdraw the assets you need either to have repaid all you debt's or other assets supplied as collateral need to be able to cover the loan. When you want to withdraw all assets you can exit the market by toggling the collateral button. The withdraw will be done automatically to your account. When partially withdrawing you can enter an amount in the input field.  
 
 
 
@@ -131,7 +131,7 @@ To withdraw the assets you need either to have repaid all you debths or other as
 ### Supply and withdraw ether using ethers
 
 You can change the jsonrpcProvider to an alchemy, infura or other http url provider.
-This script will supply 1 ether and redeem it after the supply transaction is succesfull. You can adjust the script to your needs. The code waits untill the transaction has 1 confirmation on the chain before it continues the code. This code is stripped from propper error handeling. 
+This script will supply 1 ether and redeem it after the supply transaction is successful. You can adjust the script to your needs. The code waits until the transaction has 1 confirmation on the chain before it continues the code. This code is stripped from proper error handling. 
 
 ```
 const ethers = require('ethers');
@@ -197,7 +197,7 @@ main().catch((err) => {
 ```
 ### Supply and redeem erc20 tokens using ethers
 
-Supplying erc20 tokens for the first time requires an additional function to approve the smart contract to acces your erc20 tokens. 
+Supplying erc20 tokens for the first time requires an additional function to approve the smart contract to access your erc20 tokens. 
 
 ```
 const ethers = require('ethers');
@@ -299,13 +299,13 @@ const Supply = async function () {
     const provider = await getProvider();
     const signer = provider.getSigner();
     try{
-    const adressJson = require("networks/" + network + ".json");}
+    const addressJson = require("networks/" + network + ".json");}
     catch(e){
         console.log("No network found for " + network);
         return;
     }
    
-    const cTokenAddress = adressJson["c" + marketDetail.text];
+    const cTokenAddress = addressJson["c" + marketDetail.text];
     try{
     const abiJson = require("networks/abi.json");}
     catch(e){
@@ -363,7 +363,7 @@ The value gets recalculated with the right decimal numbers read from the smart c
 
 The contract gets created in the ethers format using the address, abi and signer to sign the transaction. 
 
-The code waits for 1 confirmation on chain to be sure the transaction was succesfull.
+The code waits for 1 confirmation on chain to be sure the transaction was successfully.
 
 
 ## Available Scripts
@@ -389,4 +389,4 @@ Your app is ready to be deployed!
 
 
 
-# metalend-frontend
+
