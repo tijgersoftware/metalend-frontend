@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "antd/dist/antd.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ant-table {
+  background: transparent;
+}
+
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td,
+.ant-table tfoot > tr > th,
+.ant-table tfoot > tr > td {
+  padding: 8px 0px;
+}
+.apexcharts-legend {
+  display: none !important;
+}
+
+.linearBetaBG {
+  background: linear-gradient(241.07deg, #0d0d0d 25.87%, #17f6ff 830.04%);
+}
+
+.linearBG {
+  background: linear-gradient(
+    217.14deg,
+    #0d0d0d 11.42%,
+    rgba(23, 246, 255, 0.1) 561.98%
+  );
+}
+
+.apexcharts-toolbar {
+  display: none !important;
+}
+
+.ant-tabs-ink-bar {
+  background: #17f6ff;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn:hover,
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #313131;
+}
+
+.ant-tabs-tab .ant-tabs-tab-btn:hover,
+.ant-tabs-tab .ant-tabs-tab-btn {
+  color: #999999;
+}
+
+.dark .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn:hover,
+.dark .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #ffffff;
+}
+
+.dark .ant-tabs-tab .ant-tabs-tab-btn:hover,
+.dark .ant-tabs-tab .ant-tabs-tab-btn {
+  color: #dadada;
+}
+
+.ant-modal-body {
+  padding: 0;
+}
+
+.dark .ant-modal-close {
+  color: #ffffff;
+}
+
+.ant-modal-header,
+.ant-modal-body,
+.ant-modal-content {
+  background: transparent;
+}
+
+.ant-drawer-header,
+.ant-drawer-content,
+.ant-drawer-body {
+  background: #fff;
+}
+
+.dark .ant-drawer-header,
+.dark .ant-drawer-content,
+.dark .ant-drawer-body {
+  background: #000;
+}
+
+.dark .ant-input {
+  color: #ffffff;
+}
+
+.ant-input {
+  color: #dadada;
+  background: transparent;
+}
+
+.ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  display: none;
+}
+
+.ant-table-tbody > tr.ant-table-row:hover > td,
+.ant-table-tbody > tr > td.ant-table-cell-row-hover {
+  background: transparent;
+}
+
+.NavLinkDiv a.navActive {
+  border-bottom: 2px solid #17f6ff;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  border: 0;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.dark .shadow-xl,
+.dark .hover\:shadow-lg:hover,
+.dark .shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgba(255, 255, 25, 0.1),
+    0 4px 6px -2px rgba(255, 255, 255, 1.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #fff),
+    var(--tw-ring-shadow, 0 0 #fff), var(--tw-shadow);
+}
+
+/* //Scroll Bar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #666666;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #17f6ff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #01d7df;
+}

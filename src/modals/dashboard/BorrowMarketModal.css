@@ -1,0 +1,22 @@
+.arrow {
+  width: 1em;
+  height: 0.85em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  margin-right: 0.55em;
+  margin-left: 0.55em;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: none;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}

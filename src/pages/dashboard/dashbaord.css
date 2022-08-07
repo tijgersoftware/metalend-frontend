@@ -1,0 +1,21 @@
+.Supply-space {
+  display: flex;
+}
+.textSupply {
+  text-align: right !important;
+}
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused,
+.ant-input-affix-wrappe,
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+  border-width: 0 !important;
+  border-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@media only screen and (max-width: 575px) {
+  .ant-tabs-tab {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,9 @@
+.ant-table-thead > tr > th {
+  background: inherit !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .divider1 {
+    display: none;
+  }
+}

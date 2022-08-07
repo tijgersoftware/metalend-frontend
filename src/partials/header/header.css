@@ -1,0 +1,15 @@
+.ant-drawer-close {
+  display: none !important;
+}
+
+.diamondSvg {
+  position: relative;
+}
+
+/* .diamondSvg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('/ass');
+} */

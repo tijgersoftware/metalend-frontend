@@ -1,0 +1,23 @@
+.continuous1 {
+  width: 120px;
+  height: 1em;
+  background: linear-gradient(90deg, #0d0d0d 33%, #17f6ff 50%, #0d0d0d 66%)
+    #f2f2f2;
+  background-size: 300% 100%;
+  animation: ct1 1s infinite linear;
+}
+
+.continuous2 {
+  width: 120px;
+  height: 1em;
+  background: linear-gradient(90deg, #ffffff 33%, #17f6ff 50%, #ffffff 66%)
+    #f2f2f2;
+  background-size: 300% 100%;
+  animation: ct1 1s infinite linear;
+}
+
+@keyframes ct1 {
+  0% {
+    background-position: right;
+  }
+}

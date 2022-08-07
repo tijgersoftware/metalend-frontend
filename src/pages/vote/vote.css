@@ -1,0 +1,17 @@
+.votingButton {
+  height: calc(100% - 105px);
+}
+
+@media only screen and (max-width: 767px) {
+  .votingButton {
+    height: auto;
+  }
+}
+
+.dark.dividerColor {
+  color: #666666 !important;
+}
+
+.dividerColor {
+  color: #dadada !important;
+}
